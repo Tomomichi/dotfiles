@@ -47,8 +47,13 @@ set display=uhex				" 印字不可能文字を16進数で表示
 set cursorline				" カーソル行をハイライト
 
 " Vundle --------------------------------
-set rtp+=~/.vim/vundle.git/
-call vundle#rc()
+if has("mac")
+	set rtp+=~/.vim/vundle.git/
+	call vundle#rc()
+else
+	set rtp+=~/dotfiles/vimfiles/vundle.git/
+	call vundle#rc('~/dotfiles/vimfiles/bundle')
+endif
 	Bundle 'gmarik/vundle'
 	Bundle 'Lokaltog/vim-powerline'
 filetype plugin indent on

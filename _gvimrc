@@ -1,18 +1,24 @@
+" Common
 colorscheme desert
-
 set background=dark
+set scrolloff=999 "常にカーソル行を真ん中に表示
 
+" Mac設定
 if has('mac')
 	set transparency=10	" opacity
 	set guifont=Monaco:h14	" font
-else
-	set guifont=Monaco\ 12
+
+	" 全画面表示
+	if has("gui_running")
+		set fuoptions=maxvert,maxhorz
+		au GUIEnter * set fullscreen
+	endif
 endif
 
-
-" 蜈ｨ逕ｻ髱｢陦ｨ遉ｺ
-if has("gui_running")
-	set fuoptions=maxvert,maxhorz
-	au GUIEnter * set fullscreen
+" Windows設定
+if has("win32") || has("win64")
+	gui
+	set transparency=245 "背景を透過
+	set guifont=ゆたぽん（コーディング）:h12:b:cSHIFTJIS "フォント設定
 endif
 
