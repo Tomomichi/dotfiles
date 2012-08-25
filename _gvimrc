@@ -1,1 +1,18 @@
 colorscheme desert
+
+set background=dark
+
+if has('mac')
+	set transparency=10	" opacity
+	set guifont=Monaco:h14	" font
+else
+	set guifont=Monaco\ 12
+endif
+
+
+" 全画面表示
+if has("gui_running")
+	set fuoptions=maxvert,maxhorz
+	au GUIEnter * set fullscreen
+endif
+
