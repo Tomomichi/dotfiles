@@ -20,4 +20,11 @@ if has("gui_running")
 	au GUIEnter * set fullscreen
 endif
 
-Bundle 'Lokaltog/vim-powerline'
+
+set rtp+=~/.vim/vundle.git/
+call vundle#rc()
+
+	Bundle 'Lokaltog/vim-powerline'
+
+filetype plugin indent on
+
