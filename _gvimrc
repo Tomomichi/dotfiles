@@ -2,6 +2,7 @@
 colorscheme desert
 set background=dark
 set scrolloff=999 "常にカーソル行を真ん中に表示
+set showtabline=2 "常にタブを表示
 
 " Mac設定
 if has('mac')

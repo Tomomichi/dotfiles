@@ -13,7 +13,7 @@ syntax on				" シンタックスカラーリングオン
 " tabstop:				Tab文字を画面上で何文字分に展開するか
 " shiftwidth:				cindentやautoindent時に挿入されるインデントの幅
 " softtabstop:				Tabキー押し下げ時の挿入される空白の量，0の場合はtabstopと同じ，BSにも影響する
-set tabstop=4 shiftwidth=4 softtabstop=0
+set tabstop=2 shiftwidth=2 softtabstop=0
 set autoindent smartindent		" 自動インデント，スマートインデント
 
 " Assist imputting ---------------------
