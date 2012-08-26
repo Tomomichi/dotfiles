@@ -7,12 +7,6 @@ set scrolloff=999 "常にカーソル行を真ん中に表示
 if has('mac')
 	set transparency=10	" opacity
 	set guifont=Monaco:h14	" font
-
-	" 全画面表示
-	if has("gui_running")
-		set fuoptions=maxvert,maxhorz
-		au GUIEnter * set fullscreen
-	endif
 endif
 
 " Windows設定
