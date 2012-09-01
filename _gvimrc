@@ -1,12 +1,13 @@
 " Common
 colorscheme desert
-set background=dark
+#set background=dark
 set scrolloff=999 "常にカーソル行を真ん中に表示
 
 " Mac設定
 if has('mac')
-	set transparency=10	" opacity
+	set transparency=70	" opacity
 	set guifont=Monaco:h14	" font
+	set lines="30" columns="50"
 endif
 
 " Windows設定
