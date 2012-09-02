@@ -1,6 +1,5 @@
 " Common
 colorscheme desert
-#set background=dark
 set scrolloff=999 "常にカーソル行を真ん中に表示
 set showtabline=2 "常にタブを表示
 
@@ -8,11 +7,7 @@ set showtabline=2 "常にタブを表示
 if has('mac')
 	set transparency=70	" opacity
 	set guifont=Monaco:h14	" font
-<<<<<<< HEAD
-	set lines="30" columns="50"
-=======
 	set lines=30 columns=80
->>>>>>> ba72081419c851012cb633ef703a426e88165f9d
 endif
 
 " Windows設定
