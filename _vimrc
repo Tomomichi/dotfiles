@@ -46,6 +46,10 @@ set display=uhex				" 印字不可能文字を16進数で表示
 
 set cursorline				" カーソル行をハイライト
 
+" NERDTree ------------------------------
+autocmd VimEnter * NERDTree ./	" 常にNERDTreeを表示
+
+
 " Vundle --------------------------------
 if has("mac")
 	set rtp+=~/.vim/vundle.git/

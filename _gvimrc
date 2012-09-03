@@ -13,6 +13,7 @@ endif
 " Windows設定
 if has("win32") || has("win64")
 	gui
+	au GUIEnter * simalt ~x	"全画面表示
 	set transparency=245 "背景を透過
 	set guifont=ゆたぽん（コーディング）:h12:b:cSHIFTJIS "フォント設定
 endif
