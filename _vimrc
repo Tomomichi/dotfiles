@@ -8,6 +8,7 @@ set noswapfile				" スワップファイルを作らない
 set nobackup				" バックアップを取らない
 autocmd BufWritePre * :%s/\s\+$//ge	" 保存時に行末の空白を除去する
 syntax on				" シンタックスカラーリングオン
+set fileformats=unix,dos,mac " 改行コード判別
 
 " Indent -------------------------------
 " tabstop:				Tab文字を画面上で何文字分に展開するか
