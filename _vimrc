@@ -63,7 +63,6 @@ else
 	set rtp+=~/dotfiles/vimfiles/vundle.git/
 	call vundle#rc('~/dotfiles/vimfiles/bundle')
 endif
-
 	Bundle 'gmarik/vundle'
 	Bundle 'Lokaltog/vim-powerline'
 	Bundle 'scrooloose/nerdtree'
@@ -71,5 +70,6 @@ endif
 	Bundle 'taichouchou2/html5.vim'
 	Bundle 'taichouchou2/vim-javascript'
 	Bundle 'hail2u/vim-css3-syntax'
+	Bundle 'tpope/vim-rails'
 filetype plugin indent on
 
