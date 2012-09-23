@@ -33,6 +33,7 @@ set ignorecase				" 大文字小文字無視
 set smartcase				" 大文字ではじめたら大文字小文字無視しない
 set incsearch				" インクリメンタルサーチ
 set hlsearch				" 検索文字をハイライト
+au QuickfixCmdPost vimgrep cw
 
 " View ---------------------------------
 set showmatch				" 括弧の対応をハイライト
