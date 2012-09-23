@@ -46,6 +46,14 @@ set display=uhex				" 印字不可能文字を16進数で表示
 
 set cursorline				" カーソル行をハイライト
 
+" NERDTree ------------------------------
+autocmd VimEnter * execute 'NERDTree ./'
+
+" ctagsのPATH変更
+if has("mac")
+	let $PATH = '/Applications/MacVim.app/Contents/MacOS/ctags:'.$PATH
+endif
+
 " Vundle --------------------------------
 if has("mac")
 	set rtp+=~/.vim/vundle.git/
@@ -54,7 +62,13 @@ else
 	set rtp+=~/dotfiles/vimfiles/vundle.git/
 	call vundle#rc('~/dotfiles/vimfiles/bundle')
 endif
+
 	Bundle 'gmarik/vundle'
 	Bundle 'Lokaltog/vim-powerline'
+	Bundle 'scrooloose/nerdtree'
+	Bundle 'tpope/vim-surround'
+	Bundle 'taichouchou2/html5.vim'
+	Bundle 'taichouchou2/vim-javascript'
+	Bundle 'hail2u/vim-css3-syntax'
 filetype plugin indent on
 
