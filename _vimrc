@@ -34,6 +34,7 @@ set ignorecase				" 大文字小文字無視
 set smartcase				" 大文字ではじめたら大文字小文字無視しない
 set incsearch				" インクリメンタルサーチ
 set hlsearch				" 検索文字をハイライト
+au QuickfixCmdPost vimgrep cw
 
 " View ---------------------------------
 set showmatch				" 括弧の対応をハイライト
@@ -51,6 +52,11 @@ set cursorline				" カーソル行をハイライト
 autocmd VimEnter * NERDTree ./	" 常にNERDTreeを表示
 
 
+" ctagsのPATH変更
+if has("mac")
+	let $PATH = '/Applications/MacVim.app/Contents/MacOS/ctags:'.$PATH
+endif
+
 " Vundle --------------------------------
 if has("mac")
 	set rtp+=~/.vim/vundle.git/
@@ -62,5 +68,10 @@ endif
 	Bundle 'gmarik/vundle'
 	Bundle 'Lokaltog/vim-powerline'
 	Bundle 'scrooloose/nerdtree'
+	Bundle 'tpope/vim-surround'
+	Bundle 'taichouchou2/html5.vim'
+	Bundle 'taichouchou2/vim-javascript'
+	Bundle 'hail2u/vim-css3-syntax'
+	Bundle 'tpope/vim-rails'
 filetype plugin indent on
 
