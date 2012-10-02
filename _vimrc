@@ -9,6 +9,9 @@ set nobackup				" バックアップを取らない
 autocmd BufWritePre * :%s/\s\+$//ge	" 保存時に行末の空白を除去する
 syntax on				" シンタックスカラーリングオン
 set fileformats=unix,dos,mac " 改行コード判別
+if exists('+autochdir')		" カレントディレクトリを編集中ファイルのディレクトリにする
+	set autochdir
+endif
 
 " Indent -------------------------------
 " tabstop:				Tab文字を画面上で何文字分に展開するか
@@ -34,7 +37,8 @@ set ignorecase				" 大文字小文字無視
 set smartcase				" 大文字ではじめたら大文字小文字無視しない
 set incsearch				" インクリメンタルサーチ
 set hlsearch				" 検索文字をハイライト
-au QuickfixCmdPost vimgrep cw
+au QuickfixCmdPost vimgrep copen		" grep検索結果を自動で表示
+nnoremap <ESC><ESC> :nohlsearch<CR>	" ESC連打で検索結果ハイライトを解除
 
 " View ---------------------------------
 set showmatch				" 括弧の対応をハイライト
@@ -45,8 +49,8 @@ set nowrap				" 画面幅で折り返さない
 set notitle				" タイトル書き換えない
 set scrolloff=5				" 行送り
 set display=uhex				" 印字不可能文字を16進数で表示
-
 set cursorline				" カーソル行をハイライト
+inoremap <expr> = smartchr#loop(' = ', ' == ', ' === ', '=')	" 標準で=の左右にスペースを入れる
 
 " NERDTree ------------------------------
 autocmd VimEnter * NERDTree ./	" 常にNERDTreeを表示
@@ -73,5 +77,8 @@ endif
 	Bundle 'taichouchou2/vim-javascript'
 	Bundle 'hail2u/vim-css3-syntax'
 	Bundle 'tpope/vim-rails'
+	Bundle 'tomtom/tcomment_vim'
+	Bundle 'thinca/vim-ref'
+	Bundle 'kana/vim-smartchr'
 filetype plugin indent on
 
