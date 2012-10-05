@@ -56,10 +56,11 @@ inoremap <expr> = smartchr#loop(' = ', ' == ', ' === ', '=')	" 標準で=の左�
 autocmd VimEnter * NERDTree ./	" 常にNERDTreeを表示
 
 
-" ctagsのPATH変更
+" PATH設定 ------------------------------
 if has("mac")
-	let $PATH = '/Applications/MacVim.app/Contents/MacOS/ctags:'.$PATH
+	let $PATH = '/Applications/MacVim.app/Contents/MacOS/ctags:'.$PATH  " ctagsのPATH変更
 endif
+let g:ref_phpmanual_path = '~/dotfiles/manual/php-chunked-xhtml/'		" PHP Manualのパス
 
 " Vundle --------------------------------
 if has("mac")
