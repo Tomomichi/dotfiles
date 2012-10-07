@@ -41,6 +41,7 @@ au QuickfixCmdPost vimgrep copen		" grep検索結果を自動で表示
 nnoremap <ESC><ESC> :nohlsearch<CR>	" ESC連打で検索結果ハイライトを解除
 
 " View ---------------------------------
+au BufReadPost * tab ball
 set showmatch				" 括弧の対応をハイライト
 set showcmd				" 入力中のコマンドを表示
 set showmode				" 現在のモードを表示
@@ -50,7 +51,7 @@ set notitle				" タイトル書き換えない
 set scrolloff=5				" 行送り
 set display=uhex				" 印字不可能文字を16進数で表示
 set cursorline				" カーソル行をハイライト
-inoremap <expr> = smartchr#loop(' = ', ' == ', ' === ', '=')	" 標準で=の左右にスペースを入れる
+inoremap <expr> = smartchr#loop('=', ' = ', ' == ', ' === ')	" 標準で=の左右にスペースを入れる
 
 " NERDTree ------------------------------
 autocmd VimEnter * NERDTree ./	" 常にNERDTreeを表示
