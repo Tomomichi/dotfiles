@@ -41,7 +41,6 @@ au QuickfixCmdPost vimgrep copen		" grep検索結果を自動で表示
 nnoremap <ESC><ESC> :nohlsearch<CR>	" ESC連打で検索結果ハイライトを解除
 
 " View ---------------------------------
-au BufReadPost * tab ball
 set showmatch				" 括弧の対応をハイライト
 set showcmd				" 入力中のコマンドを表示
 set showmode				" 現在のモードを表示
