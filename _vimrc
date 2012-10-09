@@ -50,7 +50,7 @@ set notitle				" タイトル書き換えない
 set scrolloff=5				" 行送り
 set display=uhex				" 印字不可能文字を16進数で表示
 set cursorline				" カーソル行をハイライト
-inoremap <expr> = smartchr#loop(' = ', ' == ', ' === ', '=')	" 標準で=の左右にスペースを入れる
+inoremap <expr> = smartchr#loop('=', ' = ', ' == ', ' === ')	" 標準で=の左右にスペースを入れる
 
 " NERDTree ------------------------------
 autocmd VimEnter * NERDTree ./	" 常にNERDTreeを表示

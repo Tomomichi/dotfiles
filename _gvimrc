@@ -5,7 +5,7 @@ set showtabline=2 "í‚Éƒ^ƒu‚ğ•\¦
 
 " Macİ’è
 if has('mac')
-	set transparency=70	" opacity
+	set transparency=10	" opacity
 	set guifont=Monaco:h14	" font
 	set lines=30 columns=80
 endif
