@@ -1,6 +1,7 @@
 " Common -------------------------------
 set nocompatible				" vim
 
+
 " File ---------------------------------
 set autoread				" 更新時自動再読込み
 set hidden				" 編集中でも他のファイルを開けるようにする
@@ -13,12 +14,14 @@ if exists('+autochdir')		" カレントディレクトリを編集中ファイ�
 	set autochdir
 endif
 
+
 " Indent -------------------------------
 " tabstop:				Tab文字を画面上で何文字分に展開するか
 " shiftwidth:				cindentやautoindent時に挿入されるインデントの幅
 " softtabstop:				Tabキー押し下げ時の挿入される空白の量，0の場合はtabstopと同じ，BSにも影響する
 set tabstop=2 shiftwidth=2 softtabstop=0
 set autoindent smartindent		" 自動インデント，スマートインデント
+
 
 " Assist imputting ---------------------
 set backspace=indent,eol,start		" バックスペースで特殊記号も削除可能に
@@ -32,6 +35,7 @@ inoremap <> <><Left>
 inoremap "" ""<Left>
 inoremap '' ''<Left>
 inoremap `' `'<Left>
+
 
 " Complement Command -------------------
 set wildmenu				" コマンド補完を強化
@@ -47,6 +51,7 @@ set hlsearch				" 検索文字をハイライト
 au QuickfixCmdPost vimgrep copen		" grep検索結果を自動で表示
 nnoremap <ESC><ESC> :nohlsearch<CR>	" ESC連打で検索結果ハイライトを解除
 
+
 " View ---------------------------------
 set showmatch				" 括弧の対応をハイライト
 set showcmd				" 入力中のコマンドを表示
@@ -59,6 +64,7 @@ set display=uhex				" 印字不可能文字を16進数で表示
 set cursorline				" カーソル行をハイライト
 inoremap <expr> = smartchr#loop('=', ' = ', ' == ', ' === ')	" 標準で=の左右にスペースを入れる
 
+
 " NERDTree ------------------------------
 autocmd VimEnter * NERDTree ./	" 常にNERDTreeを表示
 
@@ -67,7 +73,7 @@ autocmd VimEnter * NERDTree ./	" 常にNERDTreeを表示
 if has("mac")
 	let $PATH = '/Applications/MacVim.app/Contents/MacOS/ctags:'.$PATH  " ctagsのPATH変更
 endif
-let g:ref_phpmanual_path = '~/dotfiles/manual/php-chunked-xhtml/'		" PHP Manualのパス
+
 
 " Vundle --------------------------------
 if has("mac")
