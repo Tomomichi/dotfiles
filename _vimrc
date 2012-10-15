@@ -25,6 +25,13 @@ set backspace=indent,eol,start		" バックスペースで特殊記号も削除�
 set formatoptions=lmoq			" 整形オプション，マルチバイト系を追加
 set whichwrap=b,s,h,s,<,>,[,]		" カーソルを行頭、行末で止まらないようにする
 set clipboard=unnamed,autoselect		" バッファにクリップボードを利用する
+inoremap () ()<Left>
+inoremap {} {}<Left>
+inoremap [] []<Left>
+inoremap <> <><Left>
+inoremap "" ""<Left>
+inoremap '' ''<Left>
+inoremap `' `'<Left>
 
 " Complement Command -------------------
 set wildmenu				" コマンド補完を強化
