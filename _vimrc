@@ -39,6 +39,7 @@ inoremap `' `'<Left>
 inoremap \|\| \|\|<Left>
 
 
+
 " Complement Command -------------------
 set wildmenu				" コマンド補完を強化
 set wildmode=list:full			" リスト表示，最長マッチ
@@ -96,5 +97,6 @@ endif
 	Bundle 'tomtom/tcomment_vim'
 	Bundle 'thinca/vim-ref'
 	Bundle 'kana/vim-smartchr'
+	Bundle 'Shougo/neocomplcache'
 filetype plugin indent on
 
