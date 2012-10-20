@@ -37,6 +37,8 @@ inoremap "" ""<Left>
 inoremap '' ''<Left>
 inoremap `' `'<Left>
 inoremap \|\| \|\|<Left>
+let g:surround_45 = "<% \r %>"	" -で囲むと<% %>にする
+let g:surround_61 = "<%= \r %>"	" -で囲むと<% %>にする
 
 
 
