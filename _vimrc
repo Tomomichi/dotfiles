@@ -13,6 +13,8 @@ set fileformats=unix,dos,mac " 改行コード判別
 if exists('+autochdir')		" カレントディレクトリを編集中ファイルのディレクトリにする
 	set autochdir
 endif
+set encoding=utf-8
+set fileencodings=iso-2022-jp-3,iso-2022-jp,euc-jisx0213,euc-jp,utf-8,ucs-bom,euc-jp,eucjp-ms,cp932
 
 
 " Indent -------------------------------
@@ -78,6 +80,7 @@ autocmd VimEnter * NERDTree ./	" 常にNERDTreeを表示
 if has("mac")
 	let $PATH = '/Applications/MacVim.app/Contents/MacOS/ctags:'.$PATH  " ctagsのPATH変更
 endif
+let g:ref_phpmanual_path = '~/php-chunked-xhtml'
 
 
 " Vundle --------------------------------
