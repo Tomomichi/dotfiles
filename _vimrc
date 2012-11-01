@@ -1,5 +1,6 @@
 " Common -------------------------------
 set nocompatible				" vim
+filetype off
 
 
 " File ---------------------------------
@@ -76,20 +77,13 @@ inoremap <expr> = smartchr#loop('=', ' = ', ' == ', ' === ')	" 標準で=の左�
 autocmd VimEnter * NERDTree ./	" 常にNERDTreeを表示
 
 
-" PATH設定 ------------------------------
-if has("mac")
-	let $PATH = '/Applications/MacVim.app/Contents/MacOS/ctags:'.$PATH  " ctagsのPATH変更
-endif
-let g:ref_phpmanual_path = '~/php-chunked-xhtml'
-
-
 " Vundle --------------------------------
-if has("mac")
-	set rtp+=~/.vim/vundle.git/
-	call vundle#rc()
-else
+if has("win32") || has("win64")
 	set rtp+=~/dotfiles/vimfiles/vundle.git/
 	call vundle#rc('~/dotfiles/vimfiles/bundle')
+else
+	set rtp+=~/.vim/vundle.git/
+	call vundle#rc()
 endif
 	Bundle 'gmarik/vundle'
 	Bundle 'Lokaltog/vim-powerline'
