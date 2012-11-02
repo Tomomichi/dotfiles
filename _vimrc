@@ -77,15 +77,10 @@ inoremap <expr> = smartchr#loop('=', ' = ', ' == ', ' === ')	" 標準で=の左�
 autocmd VimEnter * NERDTree ./	" 常にNERDTreeを表示
 
 
-" Tumblr --------------------------------
-let g:tumblr_email='kame_f_no7@yahoo.co.jp'
-let g:tumblr_password='rendil15'
-
-
 " Vundle --------------------------------
 if has("win32") || has("win64")
-	set rtp+=~/dotfiles/vimfiles/vundle.git/
-	call vundle#rc('~/dotfiles/vimfiles/bundle')
+	set rtp+=~/vimfiles/vundle.git/
+	call vundle#rc('~/vimfiles/bundle')
 else
 	set rtp+=~/.vim/vundle.git/
 	call vundle#rc()
@@ -102,6 +97,6 @@ endif
 	Bundle 'thinca/vim-ref'
 	Bundle 'kana/vim-smartchr'
 	Bundle 'Shougo/neocomplcache'
-	Bundle 'tumblr.vim'
+	Bundle 'Tumblr'
 filetype plugin indent on
 
