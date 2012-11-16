@@ -103,8 +103,8 @@ endif
 	Bundle 'thinca/vim-ref'
 	Bundle 'kana/vim-smartchr'
 	Bundle 'Shougo/neocomplcache'
-	Bundle 'Tumblr'
 	Bundle 'thinca/vim-quickrun'
 	Bundle 'tyru/open-browser.vim'
+	Bundle 'sonesuke/tumblr-vim'
 filetype plugin indent on
 
