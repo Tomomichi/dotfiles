@@ -16,6 +16,12 @@ if exists('+autochdir')		" カレントディレクトリを編集中ファイ�
 endif
 set encoding=utf-8
 set fileencodings=iso-2022-jp-3,iso-2022-jp,euc-jisx0213,euc-jp,utf-8,ucs-bom,euc-jp,eucjp-ms,cp932
+autocmd BufRead,BufNewFile *.mkd setfiletype mkd		"markdownファイルに対応
+autocmd BufRead,BufNewFile *.md setfiletype mkd
+
+let g:quickrun_config = {}
+let g:quickrun_config['markdown'] = {'outputter': 'browser', 'cmdopt': '-s'}
+"let g:quickrun_config['markdown'] = {'type': 'markdown/pandoc', 'outputter': 'browser', 'cmdopt': '-s'}
 
 
 " Indent -------------------------------
@@ -97,6 +103,8 @@ endif
 	Bundle 'thinca/vim-ref'
 	Bundle 'kana/vim-smartchr'
 	Bundle 'Shougo/neocomplcache'
-	Bundle 'Tumblr'
+	Bundle 'thinca/vim-quickrun'
+	Bundle 'tyru/open-browser.vim'
+	Bundle 'sonesuke/tumblr-vim'
 filetype plugin indent on
 
