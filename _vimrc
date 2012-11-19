@@ -82,8 +82,9 @@ inoremap <expr> = smartchr#loop('=', ' = ', ' == ', ' === ')	" 標準で=の左�
 
 
 " NERDTree ------------------------------
-autocmd VimEnter * NERDTree ./	" 常にNERDTreeを表示
-
+if has("gui_running")
+	autocmd VimEnter * NERDTree ./	" 常にNERDTreeを表示
+endif
 
 " Vundle --------------------------------
 if has("win32") || has("win64")
