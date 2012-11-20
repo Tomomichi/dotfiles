@@ -2,6 +2,9 @@
 colorscheme desert
 set scrolloff=999 "常にカーソル行を真ん中に表示
 set showtabline=2 "常にタブを表示
+source $VIMRUNTIME/delmenu.vim	"メニューの文字化け修正
+set langmenu=ja_jp.utf-8
+source $VIMRUNTIME/menu.vim
 
 " Mac設定
 if has('mac') && has('gui_running')
@@ -18,4 +21,5 @@ if has("win32") || has("win64")
 	set transparency=245 "背景を透過
 	set guifont=ゆたぽん（コーディング）:h12:b:cSHIFTJIS "フォント設定
 endif
+
 
