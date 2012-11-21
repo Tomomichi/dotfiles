@@ -63,8 +63,15 @@ set smartcase				" 大文字ではじめたら大文字小文字無視しない
 set incsearch				" インクリメンタルサーチ
 set hlsearch				" 検索文字をハイライト
 nnoremap <ESC><ESC> :nohlsearch<CR>	" ESC連打で検索結果ハイライトを解除
+
+
+" Grep ---------------------------------
+if has("win32") || has("win64")
+	set grepprg=c:/cygwin/bin/grep\ -nH		"cygwinの外部grepにパスを通す
+else
+	set grepprg=grep\ -nH
+endif
 au QuickfixCmdPost vimgrep copen		" grep検索結果を自動で表示
-set grepprg=c:/cygwin/bin/grep\ -nH		"cygwinの外部grepにパスを通す
 au QuickfixCmdPost grep copen		" grep検索結果を自動で表示
 
 
