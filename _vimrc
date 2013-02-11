@@ -116,5 +116,7 @@ endif
 	Bundle 'thinca/vim-quickrun'
 	Bundle 'tyru/open-browser.vim'
 	Bundle 'sonesuke/tumblr-vim'
+	Bundle 'kchmck/vim-coffee-script'
+	Bundle 'groenewege/vim-less'
 filetype plugin indent on
 
