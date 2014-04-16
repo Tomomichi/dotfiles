@@ -1,0 +1,29 @@
+update
+upgrade
+
+tap phinze/homebrew-cask
+install brew-cask
+
+install rbenv
+install ruby-build
+install gibo
+install heroku-toolbelt
+install postgresql
+
+cask install appcleaner
+cask install alfred
+cask alfred link
+cask install clamxav
+cask install day-o
+cask install dropbox
+cask install google-chrome
+cask install google-drive
+cask install google-japanese-ime
+cask install iterm2
+cask install macvim
+cask install monolingual
+cask install mplayerx
+cask install pg-commander
+cask install totalfinder
+
+cleanup
