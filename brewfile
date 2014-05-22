@@ -32,5 +32,6 @@ cask install monolingual
 cask install mplayerx
 cask install pg-commander
 cask install totalfinder
+cask install iexplorer
 
 cleanup
