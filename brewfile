@@ -4,19 +4,13 @@ upgrade
 tap phinze/homebrew-cask
 install brew-cask
 
-brew tap supermomonga/homebrew-splhack
-brew install cscope
-brew install lua
-brew install --HEAD cmigemo-mk
-brew install --HEAD ctags-objc-ja
-brew install install macvim-kaoriya --HEAD --with-lua　--with-cscope
-brew linkapps
-
 install rbenv
 install ruby-build
 install gibo
 install heroku-toolbelt
 install postgresql
+install gts
+install graphviz
 
 cask install appcleaner
 cask install alfred
