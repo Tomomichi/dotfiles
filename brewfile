@@ -9,7 +9,6 @@ install ruby-build
 install gibo
 install heroku-toolbelt
 install postgresql
-install gts
 install graphviz
 
 cask install appcleaner
@@ -26,6 +25,5 @@ cask install monolingual
 cask install mplayerx
 cask install pg-commander
 cask install totalfinder
-cask install iexplorer
 
 cleanup
