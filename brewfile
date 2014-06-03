@@ -1,9 +1,6 @@
 update
 upgrade
 
-tap phinze/homebrew-cask
-install brew-cask
-
 install wget
 install rbenv
 install ruby-build
@@ -11,7 +8,10 @@ install gibo
 install heroku-toolbelt
 install postgresql
 install graphviz
+install macvim --with-lua
 
+tap phinze/homebrew-cask
+install brew-cask
 cask install appcleaner
 cask install alfred
 cask alfred link
@@ -27,4 +27,5 @@ cask install mplayerx
 cask install pg-commander
 cask install totalfinder
 
+linkapps
 cleanup
