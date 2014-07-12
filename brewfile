@@ -9,6 +9,7 @@ install heroku-toolbelt
 install postgresql
 install graphviz
 install macvim --with-lua
+install redis
 
 tap phinze/homebrew-cask
 install brew-cask
