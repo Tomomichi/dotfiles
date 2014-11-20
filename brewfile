@@ -8,7 +8,7 @@ install gibo
 install heroku-toolbelt
 install postgresql
 install graphviz
-install macvim --with-lua
+# install macvim --with-lua
 install redis
 
 tap phinze/homebrew-cask
@@ -27,7 +27,10 @@ cask install monolingual
 cask install mplayerx
 cask install pg-commander
 cask install totalfinder
-cask install mamp
+# cask install mamp
+
+tap caskroom/homebrew-versions
+cask install sublime-text3
 
 linkapps
 cleanup
