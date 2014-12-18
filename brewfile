@@ -10,6 +10,8 @@ install postgresql
 install graphviz
 # install macvim --with-lua
 install redis
+install phantomjs
+install mysql
 
 tap phinze/homebrew-cask
 install brew-cask
