@@ -1,38 +1,26 @@
-update
-upgrade
+brew "wget"
+brew "rbenv"
+brew "ruby-build"
+brew "gibo"
+brew "heroku-toolbelt"
+brew "postgresql"
+brew "mysql"
 
-install wget
-install rbenv
-install ruby-build
-install gibo
-install heroku-toolbelt
-install postgresql
-install graphviz
-# install macvim --with-lua
-install redis
-install phantomjs
-install mysql
-
-tap phinze/homebrew-cask
-install brew-cask
-cask install appcleaner
-cask install alfred
-cask alfred link
-cask install clamxav
-cask install day-o
-cask install dropbox
-cask install google-chrome
-cask install google-drive
-cask install google-japanese-ime
-cask install iterm2
-cask install monolingual
-cask install mplayerx
-cask install pg-commander
-cask install totalfinder
-# cask install mamp
-
-tap caskroom/homebrew-versions
-cask install sublime-text3
-
-linkapps
-cleanup
+tap "phinze/homebrew-cask"
+brew "brew-cask"
+cask "appcleaner"
+cask "alfred"
+cask "clamxav"
+cask "day-o"
+cask "dropbox"
+cask "google-chrome"
+cask "google-drive"
+cask "google-japanese-ime"
+cask "iterm2"
+cask "monolingual"
+cask "mplayerx"
+cask "pg-commander"
+cask "atom"
+cask "sequel-pro"
+cask "caffeine"
+cask "evernote"
