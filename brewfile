@@ -5,6 +5,13 @@ brew "gibo"
 brew "heroku-toolbelt"
 brew "postgresql"
 brew "mysql"
+brew "node"
+
+tap "homebrew/science"
+brew "R"
+
+tap "homebrew/dupes"
+brew "apple-gcc42"
 
 tap "phinze/homebrew-cask"
 brew "brew-cask"
@@ -26,3 +33,4 @@ cask "caffeine"
 cask "evernote"
 cask "sketch"
 cask "skype"
+
