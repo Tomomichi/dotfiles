@@ -13,3 +13,4 @@
 	st = status
 [core]
 	editor = vim
+	excludesfile = /Users/tomomichi/.gitignore_global
