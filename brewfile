@@ -33,4 +33,5 @@ cask "caffeine"
 cask "evernote"
 cask "sketch"
 cask "skype"
+cask "psequel"
 
