@@ -10,7 +10,7 @@ brew "rbenv"
 brew "ruby-build"
 brew "heroku"
 brew "postgresql"
-brew "mysql"
+brew "mysql@5.7"
 brew "nodebrew"
 brew "zsh"
 
