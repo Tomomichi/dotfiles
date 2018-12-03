@@ -3,6 +3,8 @@
 	email = tomomichi.onishi@gmail.com
 [color]
 	ui = auto
+[commit]
+	template = /Users/tomomichi/Documents/projects/dotfiles/_gitmessage
 [log]
 	decorate = short
 [alias]
