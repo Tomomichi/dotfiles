@@ -4,7 +4,7 @@
 [color]
 	ui = auto
 [commit]
-	template = /Users/tomomichi/Documents/projects/dotfiles/_gitmessage
+	template = /Users/notsobad/Documents/projects/dotfiles/_gitmessage
 [log]
 	decorate = short
 [alias]
@@ -15,7 +15,7 @@
 	st = status
 [core]
 	editor = vim
-	excludesfile = /Users/tomomichi/.gitignore_global
+	excludesfile = /Users/notsobad/.gitignore_global
 [url "https://"]
 	insteadOf = git://
 [url "git://"]
