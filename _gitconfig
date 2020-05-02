@@ -16,7 +16,3 @@
 [core]
 	editor = vim
 	excludesfile = /Users/notsobad/.gitignore_global
-[url "https://"]
-	insteadOf = git://
-[url "git://"]
-	insteadOf = https://
