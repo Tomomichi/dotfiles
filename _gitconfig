@@ -18,3 +18,5 @@
 	excludesfile = /Users/notsobad/.gitignore_global
 [push]
 	default = current
+[pull]
+	ff = only
