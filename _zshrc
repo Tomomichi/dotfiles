@@ -16,6 +16,7 @@ eval "$(rbenv init -)"
 
 
 alias be='bundle exec'
+alias dc='docker-compose'
 
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH="/opt/homebrew/bin:$PATH"
