@@ -1,4 +1,5 @@
 tap "heroku/brew"
+brew "awscli"
 brew "docker-clean"
 brew "peco"
 brew "tig"
