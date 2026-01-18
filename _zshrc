@@ -10,6 +10,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+done
+
 # Customize to your needs...
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
@@ -17,7 +22,7 @@ eval "$(rbenv init -)"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
 alias be='bundle exec'
-alias dc='docker-compose'
+alias dc='docker compose'
 
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH="/opt/homebrew/bin:$PATH"
